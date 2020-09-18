@@ -1,0 +1,156 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, Sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    color: #000000;
+    background-color: #c2cbdf
+}
+
+#container {
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid gray;
+    background-color: #ffffff;
+}
+
+#container h2 {
+    color: #0a3050;
+    font: "Open Sans", sans-serif;
+}
+
+#container h3 {
+    color: #53a2be;
+    font: "Open Sans", sans-serif;
+}
+
+#container-graph {
+    width: 80%;
+}
+
+#top_row {
+    border-bottom: 1px dotted #ccc;
+    padding: .5em .5em 3em .5em;
+    margin-bottom: -2.5em;
+}
+
+#top_row h1 {
+    color: #000000;
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    padding-top: 20px;
+    font: "Open Sans", sans-serif;
+}
+
+#top_row img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#top_row nav{
+    float: right;
+}
+
+#top_row nav a {
+    text-decoration: none;
+    font-size: 1.125em;
+    font-weight: 400;
+    padding: 15px;
+    color: #3583ba;
+}
+
+#top_row nav a.selected {
+    background: #f6f6f6;
+    color: #bbbbbb;
+}
+
+#top_row nav a:hover {
+    background: #f6f6f6;
+    color: #3583ba;
+}
+
+footer {
+    clear: both;
+    margin: auto;
+    padding: 1em;
+    border-top: 1px dotted #ccc;
+}
+
+footer a {
+    padding: 0.5em;
+}
+
+#icons {
+    margin: auto;
+    width: 25%;
+}
+
+#icons p {
+    font-size: 0.75em;
+    color: #3583ba;
+    text-align: center;
+}
+
+#citations p {
+    font-size: 0.75em;
+    color: #000000;
+    text-align: left;
+}
+
+#content {
+    float: left;
+    margin: 0;
+    padding: 1em;
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+}
+
+th {
+    height: 40px;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 1px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td img {
+    width: 250px;
+    margin-right: 5px;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#gallery img {
+    height: 250px;
+    float: left;
+    padding: 5px;
+}
+
+#map {
+    width: 100%;
+    padding: 10px;
+    clear: both;
+}
+
+#populartimes {
+    clear: both;
+    padding: 10px;
+}
+
+legend {
+    text-align: center;
+}
+
+p {
+    font: Arial, sans-serif;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <!-- External links to CSS files -->
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css" />
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css" />
+
+    <!-- External links to JavaScript files -->
+    <script src = "js/scripts.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+
+    <meta charset = "utf-8" />
+    <meta name = "Blue Monkey Tea Pittsburgh" content = "tea offerings">
+    <meta name = "keywords" content = "contact form">
+    <meta name = "description" content = "Blue Monkey Tea Pittsburgh Contact Page">
+
+    <title>Blue Monkey Tea Pittsburgh Contact</title>
+
+</head>
+
+<div id = "container">
+
+    <body>
+
+        <div id = "top_row">
+            <header>
+                <img src = "images/logo.png" alt = "logo" width = 80>
+                <h1>Blue Monkey Tea Pittsburgh</h1>
+            </header>
+        
+            <!-- Navigation bar -->
+            <nav>
+                <a href = "index.html">Home</a>
+                <a href = "about.html">About</a>
+                <a href = "tea.html">Tea</a>
+                <a class = "selected" href = "contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div id = "content">
+
+            <!-- Contact form -->
+            <h2>Contact</h2>
+            <p>Please use the form below to get in contact with us.</p>
+
+            <form onsubmit="return validate()" action = "mailto:100teacups@gmail.com" method = "POST" enctype = "multipart/form-data">
+                <fieldset>
+                <legend>Contact Form</legend>
+                <label for = "name">Name:</label><br>
+                <input type = "text" id = "name" name = "name" required><br><br>
+                <label for = "zip">Zip code:</label><br>
+                <input type = "text" id = "zip" name = "zip"><br><br>
+                <label for = "email">Email address:</label><br>
+                <input type = "email" id = "email" name = "email" required><br><br>
+                <label for = "subscribe">Please check this box if you would like to subscribe to our weekly coupon flyer:</label>
+                <input type = "checkbox" id = "subscribe" name = "subscribe"><br><br>
+                <input type = "submit" value = "Submit">
+                </fieldset>
+            </form>
+
+        </div>
+    </body>
+
+    <footer>
+
+        <!-- Contains images with links to social media pages, mail, and blog -->
+        <div id = "icons">
+        <p>Find us here:</p>
+        <a href = "mailto:100teacups@gmail.com"><img src = "images/email.png" alt = "email icon" width = 40></a>
+        <a href = "https://www.facebook.com/TeaPittsburgh/" target = "_blank"><img src = "images/facebookicon.png" alt = "Facebook icon" width = 40></a>
+        <a href = "https://www.instagram.com/bluemonkeytea/" target = "_blank"><img src = "images/instagramicon.png" alt = "Instagram icon" width = 40></a>
+        <a href = "https://teapittsburgh.wordpress.com/" target = "_blank"><img src = "images/blogicon.png" alt = "blog icon" width = 40></a>
+        </div>
+
+        <div id = "citations">
+            <p>Citations:<br>
+            Icons: Google images</p>
+        </div>
+
+    </footer>
+
+</div>

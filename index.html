@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <!-- External links to CSS files --> 
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css" />
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css" />
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery.lightbox.css"/>
+
+    <!-- External links to JavaScript files -->
+    <script src = "js/scripts.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+    <script src = "js/jquery-3.4.1.min.js"></script>
+    <script src = "js/jquery.lightbox.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <meta charset = "utf-8" />
+    <meta name = "Blue Monkey Tea Pittsburgh" content = "tea">
+    <meta name = "keywords" content = "about, location, hours">
+    <meta name = "description" content = "Blue Monkey Tea Pittsburgh Home Page">
+
+    <!-- Lightbox gallery code -->
+    <script type = "text/JavaScript">
+        $(function(){
+            $('#gallery a').lightBox();
+        });
+    </script>
+
+    <!-- Highcharts graph code from Highcharts -->
+    <script>
+        $(function () {
+            $("#container-graph").highcharts({
+    chart: {
+    type: 'line'
+    },
+    title: {
+        text: 'Average People In Store'
+    },
+    xAxis: {
+        categories: ['11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm']
+    },
+    yAxis: {
+        title: {
+            text: 'Number of People'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: 'Monday-Saturday',
+        data: [5, 10, 8, 24, 5, 7, 32, 16]
+    }, {
+        name: 'Sunday',
+        data: [50, 48, 25, 28, 27]
+    }]
+});
+});
+    </script>
+
+    <title>Blue Monkey Tea Pittsburgh</title>
+
+</head>
+
+<div id = "container">
+
+<body>
+
+    <div id = "top_row">
+    <header>
+        <img src = "images/logo.png" alt = "logo" width = 80>
+        <div id = "head"><h1>Blue Monkey Tea Pittsburgh</h1></div>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a class = "selected" href = "index.html">Home</a>
+        <a href = "about.html">About</a>
+        <a href = "tea.html">Tea</a>
+        <a href = "contact.html">Contact</a>
+    </nav>
+    </div>
+
+    <div id = "content">
+
+        <h2>Welcome to Blue Monkey Tea Pittsburgh!</h2>
+
+        <!-- Table with store information -->
+        <div id = "storeinfo">
+            <h3>Store Information</h3>
+
+            <table>
+                <caption>Additional information about Blue Monkey Tea Pittsburgh</caption>
+                <tr>
+                    <th>Storefront</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <th>Business Hours</th>
+                </tr>
+                <tr>
+                    <td><img src = "images/storefront.png" alt = "store front"></td>
+                    <td>5872 Forbes Ave<br>
+                        Pittsburgh, PA 15217</td>
+                    <td>(412) 422-1606</td>
+                    <td><a href = "mailto:100teacups@gmail.com">100teacups@gmail.com</a></td>
+                    <td>Monday	11AM–7PM<br>
+                        Tuesday	11AM–7PM<br>
+                        Wednesday 11AM–7PM<br>
+                        Thursday 11AM–7PM<br>
+                        Friday	11AM–7PM<br>
+                        Saturday 11AM–7PM<br>
+                        Sunday	12–5PM</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Embedded map -->
+        <div id = "map">
+            <h3>Location</h3>
+                <p>We are located in Squirrel Hill in Pittsburgh. We have closed our shop in South Hills in Carnegie.</p>
+                <iframe title = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6901036959093!2d-79.9223855846034!3d40.43786047936281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2001a450d9f%3A0xa25015943230019f!2s5872%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015217!5e0!3m2!1sen!2sus!4v1585028530817!5m2!1sen!2sus" 
+                width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <!-- Lightbox Gallery -->
+        <div id = "content-gallery">
+            <h3>Image Gallery</h3>
+            <p>Click on the image to see the description.</p>
+            <div id = "gallery">
+            <div id = "galleryThumbnail1"><div id = "thmbnlShadow1">
+                <a href = "images/image1.png" title = "Some of Blue Monkey's various teas.">
+                <img src = "images/image1thumb.png" alt = "Blue Monkey teas"></a></div></div>
+
+            <div id = "galleryThumbnail2"><div id = "thmbnlShadow2">
+                <a href = "images/image2.png" title = "British tea offerings at Blue Monkey Tea.">
+                <img src = "images/image2thumb.png" alt = "British teas"></a></div></div>
+
+            <div id = "galleryThumbnail3"><div id = "thmbnlShadow3">
+                <a href = "images/image3.png" title = "Teapots and teacups sold at Blue Monkey Tea">
+                <img src = "images/image3thumb.png" alt = "Teapots and teacups"></a></div></div>
+            </div>
+        </div>
+
+        <!-- Highcharts graph showing average number of people in store at certain time -->
+        <div id = "populartimes">
+            <h3>Popular Times</h3>
+            <div id = "container-graph"></div>
+        </div>
+
+    </div>
+
+</body>
+
+<footer>
+
+    <!-- Contains images with links to social media pages, mail, and blog -->
+    <div id = "icons">
+    <p>Find us here:</p>
+    <a href = "mailto:100teacups@gmail.com"><img src = "images/email.png" width = 40 alt = "email icon"></a>
+    <a href = "https://www.facebook.com/TeaPittsburgh/" target = "_blank"><img src = "images/facebookicon.png" alt = "Facebook icon" width = 40></a>
+    <a href = "https://www.instagram.com/bluemonkeytea/" target = "_blank"><img src = "images/instagramicon.png" alt = "Instagram icon" width = 40></a>
+    <a href = "https://teapittsburgh.wordpress.com/" target = "_blank"><img src = "images/blogicon.png" alt = "blog icon" width = 40></a>
+    </div>
+
+    <div id = "citations">
+        <p>Citations: <br>
+        Images: Blue Monkey Tea Pittsburgh's Facebook page <br>
+        Icons: Google images</p>
+    </div>
+
+</footer>
+
+</div>
